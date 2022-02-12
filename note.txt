@@ -1,0 +1,2 @@
+Matebook X Pro Pro (2020) MACHC-WAX9 #методы в sdts, а не в dsdt
+Matebook 13 (2019) WRT-WX9 #старый EC
