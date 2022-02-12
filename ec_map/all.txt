@@ -3,10 +3,10 @@
 0x02 VERT or ECTV (old)
 0x03      or ECRV (old)
 0x04 YEAR
-0x05 MONT
-0x06 DAYS or DATE (old)
-0x07
-0x08 FNLK,FNST,????,????,????,????,????,???? (old)
+0x05 MONT or PNMD (d16)
+0x06 DAYS or DATE (old) or CPTP,GPTP,????,????,????,????,????,???? (d16)
+0x07                    or BF2S,BF12,BF8S,BF10,????,????,????,???? (d16)
+0x08 FNLK,FNST,FKS1,FNRE,FNRE,FNRE,FNRE,FNRE (old) (d16) 
 0x09
 0x0A
 0x0B
@@ -39,83 +39,83 @@
 0x26 STM0 or TP06 (old)
 0x27 TNTC or TP07 (old)
 0x28 STM1 or TP08 (old)
-0x29 STM2
-0x2A      or BTST,BTST,BTST,BSRV,BSRV,BSRV,BSRV,BSRV (old)
-0x2B BTMP
-0x2C
+0x29 STM2 or TP09 (d16)
+0x2A      or BTST,BTST,BTST,BSRV,BSRV,BSRV,BSRV,BSRV (old) (d16)
+0x2B BTMP or TP0B (d16)
+0x2C      or TP0C (d16)
 0x2D
 0x2E     or CPOF,GPOF,SCOF,GUOF,TCOF,CGOF,DROF,BAOF (old)
 0x2F     or CPUF,GPUF,SCUF,GUUF,TCUF,CGUF,DRUF,BAUF (old)
-0x30 BDNA
-0x31 BDNA
-0x32 BDNA
-0x33 BDNA
-0x34 BDNA
-0x35 BDNA
-0x36 BDNA
-0x37 BDNA
-0x38 BDNA
-0x39 BDNA
-0x3A BDNA
-0x3B BDNA
-0x3C BDNA
-0x3D BDNA
-0x3E BDNA
-0x3F BDBC
-0x40
-0x41
-0x42
-0x43
-0x44 SLPO
-0x45 FAPO
-0x46 SUPO
-0x47 TCTL
-0x48 ????,????,BACF,????,????,????,????,????
-0x49
-0x4A
-0x4B
-0x4C UTYC
-0x4D DTYC
-0x4E UCHA
-0x4F DCHA
-0x50
-0x51
-0x52
-0x53
-0x54 SPDT
+0x30 BDNA or SMPR (d16)
+0x31 BDNA or SMST (d16)
+0x32 BDNA or SMAD (d16)
+0x33 BDNA or SMCM (d16)
+0x34 BDNA or SDA0 (d16)
+0x35 BDNA or SDA1 (d16)
+0x36 BDNA or SDA1 (d16)
+0x37 BDNA or SDA1 (d16)
+0x38 BDNA or SDA1 (d16)
+0x39 BDNA or SDA1 (d16)
+0x3A BDNA or SDA1 (d16)
+0x3B BDNA or SDA1 (d16)
+0x3C BDNA or SDA1 (d16)
+0x3D BDNA or SDA1 (d16)
+0x3E BDNA or SDA1 (d16)
+0x3F BDBC or SDA1 (d16)
+0x40      or SDA1 (d16)
+0x41      or SDA1 (d16)
+0x42      or SDA1 (d16)
+0x43      or SDA1 (d16)
+0x44 SLPO or SDA1 (d16)
+0x45 FAPO or SDA1 (d16)
+0x46 SUPO or SDA1 (d16)
+0x47 TCTL or SDA1 (d16)
+0x48 ????,????,BACF,????,????,????,????,???? or SDA1 (d16)
+0x49      or SDA1 (d16)
+0x4A      or SDA1 (d16)
+0x4B      or SDA1 (d16)
+0x4C UTYC or SDA1 (d16)
+0x4D DTYC or SDA1 (d16)
+0x4E UCHA or SDA1 (d16)
+0x4F DCHA or SDA1 (d16)
+0x50      or SDA1 (d16)
+0x51      or SDA1 (d16)
+0x52      or SDA1 (d16)
+0x53      or SDA1 (d16)
+0x54 SPDT or SMBC (d16)
 0x55 GPPT
 0x56 DFDI
 0x57 DFDC
-0x58
-0x59 CPSS
-0x5A CPSC
-0x5B CPSM
-0x5C BCCL
-0x5D BCCH
-0x5E
-0x5F
-0x60 BNAM or BTOI (old)
-0x61 BNAM or BTOI (old)
-0x62 BNAM or BTOI (old)
-0x63 BNAM or BTOI (old)
-0x64 BNAM or BTOI (old)
-0x65 BNAM or BTOI (old)
-0x66 BNAM or BTOI (old)
-0x67 BNAM or BTOI (old)
-0x68 BNAM
-0x69 BNAM
-0x6A BNAM
-0x6B BNAM
+0x58      or B1EL (d16)
+0x59 CPSS or B1EH (d16)
+0x5A CPSC or B1CH (d16)
+0x5B CPSM or B1CH (d16)
+0x5C BCCL or B1CH (d16)
+0x5D BCCH or B1CH (d16)
+0x5E      or B1CH (d16)
+0x5F      or B1CH (d16)
+0x60 BNAM or BTOI (old) (d16)
+0x61 BNAM or BTOI (old) (d16)
+0x62 BNAM or BTOI (old) (d16)
+0x63 BNAM or BTOI (old) (d16)
+0x64 BNAM or BTOI (old) (d16)
+0x65 BNAM or BTOI (old) (d16)
+0x66 BNAM or BTOI (old) (d16)
+0x67 BNAM or BTOI (old) (d16)
+0x68 BNAM or HWTS (d16)
+0x69 BNAM or HWTS (d16)
+0x6A BNAM or HWTS (d16)
+0x6B BNAM or HWTS (d16)
 0x6C BNAM
 0x6D BNAM
 0x6E BNAM
 0x6F BNAM
-0x70 BNAM or PDBV (old)
-0x71 BNAM or ????,PBFS,FNKS,????,????,????,????,???? (old)
+0x70 BNAM or PDBV (old) (d16)
+0x71 BNAM or DEFF,PBFS,FNKS,MICD,????,????,????,???? (old) (d16)
 0x72 BNAM
 0x73 BNBC
-0x74      or PBPH (old)
-0x75      or PBPL (old)
+0x74      or PBPH (old) (d16)
+0x75      or PBPL (old) (d16)
 0x76 MFDT
 0x77 MFDT
 0x78
@@ -126,7 +126,7 @@
 0x7D CHCU
 0x7E BATL
 0x7F BATH
-0x80 ACDC,BST1,BST2,????,????,????,????,???? or ACST,BST1,BST2,PRED,PRED,PRED,PRED,PRED (old)
+0x80 ACDC,BST1,BST2,????,????,????,????,???? or ACST,BST1,BST2,PRED,PRED,PRED,PRED,PRED (old) (d16)
 0x81 BTML or BTBM (old)
 0x82 BTSN
 0x83 BTSN
@@ -192,19 +192,19 @@
 0xBF      or BTMN (old)
 0xC0 ALD0 or BTMN (old)
 0xC1 ALD1 or BTMN (old)
-0xC2 ALD2 or GPTP,GPTP,GPRR,GPRR,GPRR,GPRR,GPRR,GPRR (old)
-0xC3 ALD3 or BTCC (old)
-0xC4 ALD4 or BTCC (old)
-0xC5 ALD5
-0xC6 ALD6
-0xC7 ALD7
-0xC8 ALD8
-0xC9 ALD9
-0xCA
-0xCB
-0xCC FRHI
-0xCD FRLO
-0xCE F2HI
+0xC2 ALD2 or GPTP,GPTP,GPRR,GPRR,GPRR,GPRR,GPRR,GPRR (old)  or BTNM (d16)
+0xC3 ALD3 or BTCC (old) or BTNM (d16)
+0xC4 ALD4 or BTCC (old) or BTNM (d16)
+0xC5 ALD5               or BTNM (d16)
+0xC6 ALD6               or BTNM (d16)
+0xC7 ALD7               or BTNM (d16)
+0xC8 ALD8               or BTCC (d16)
+0xC9 ALD9               or BTCC (d16)
+0xCA                    or BSSS 
+0xCB                    or BSSC
+0xCC FRHI               or BTDL
+0xCD FRLO               or BTDH
+0xCE F2HI               or POWT
 0xCF F2LO
 0xD0 UCPU or ASTA (old)
 0xD1 DCPU or ASTA (old)
